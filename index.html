@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b22314e3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Fourcast</title>
 </head>
@@ -14,19 +16,23 @@
 
     <div class="card">
         <form id="search">
-            <h2>Search for a City: <h2>
+            <h2>Search for a City: </h2>
             <input id ="city" type="text" />
             <button type="submit" >Search</button>
-        </form>
-        <ul class="savedCity">
-            <li>Placerville</li>
-        </ul>
-    </div>
 
-    <div class="card">
+            <hr/>
+
+            <ul class="savedCity"></ul>
+        </form>
+        
+        <div class="weather">
         <div class="today"></div>
         <div class="week"></div>
+        </div>
     </div>
+
+    
+
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="

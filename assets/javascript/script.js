@@ -172,7 +172,7 @@ var saveCity = function(data, city){
 
     cityHistory(city);
     
-    localStorage.setItem(city, JSON.stringify(cityWeather));
+    localStorage.setItem(city.toLowerCase(), JSON.stringify(cityWeather));
     
 }
 
@@ -202,8 +202,9 @@ var reloadCity = function(event){
 
     if(element.matches("li")){
         var city=  element.textContent               // future code element.getAttribute("data-City");
+        
         console.log(city)
-        var weather = JSON.parse( localStorage.getItem(city) );
+        var weather = JSON.parse( localStorage.getItem(city.toLowerCase()) );
         console.log(weather);
         if(weather !== null){
             dayDisplay(weather[0], city)

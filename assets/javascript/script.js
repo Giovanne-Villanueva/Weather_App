@@ -21,6 +21,7 @@ var formHandler = function(event){
     var city = inputEl.value.trim();
     if(city){
         getWeather(city);
+        index = [];
         inputEl.value = "";
         dayForecast.innerHTML = "";
         weekForecast.innerHTML = "";
